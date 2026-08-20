@@ -9,6 +9,14 @@
   "desktop_entries": [],
   "dependencies": [],
   "addons": [],
+  "addon_provider": {
+    "id": "zig",
+    "slot": "sdk.zig",
+    "mode": "exclusive",
+    "exports": {
+      "path": ["/opt/zig"]
+    }
+  },
   "idle_time": 0,
   "override": {
     "socketX11": false,
