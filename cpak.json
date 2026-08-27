@@ -1,11 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Zig SDK",
   "description": "Zig compiler and standard library.",
   "version": "0.16.0",
-  "image": "ghcr.io/containerpak/sdk-zig:main",
-  "binaries": ["/usr/local/bin/zig"],
+  "image": "ghcr.io/containerpak/sdk-zig@sha256:dff9a10ad1a3b8067ee563b0e66d4d0d6b10b3b02a015b2af8a0ddc347c1d160",
+  "binaries": [
+    "/usr/local/bin/zig"
+  ],
   "desktop_entries": [],
   "dependencies": [],
   "addons": [],
@@ -14,21 +16,18 @@
     "slot": "sdk.zig",
     "mode": "exclusive",
     "exports": {
-      "path": ["/opt/zig"]
+      "path": [
+        "/opt/zig"
+      ]
     }
   },
   "idle_time": 0,
   "override": {
-    "socketX11": false,
     "socketWayland": false,
     "socketPulseAudio": false,
-    "socketSessionBus": false,
-    "socketSystemBus": false,
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
-    "socketAtSpiBus": false,
-    "socketBluetooth": false,
     "deviceDri": false,
     "deviceKvm": false,
     "deviceShm": false,
@@ -40,7 +39,12 @@
     "deviceAll": false,
     "notification": false,
     "openURI": false,
-    "filesystem": [{"path": "home", "access": "read-write"}],
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "env": [],
     "network": true,
     "process": false,
@@ -48,7 +52,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
