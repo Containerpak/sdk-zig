@@ -4,7 +4,7 @@
   "name": "Zig SDK",
   "description": "Zig compiler and standard library.",
   "version": "0.16.0",
-  "image": "ghcr.io/containerpak/sdk-zig@sha256:c3a53eaafb59f56e4b3ba4eba3b1ac7a4e21230d359dfc9106034add324a6ddf",
+  "image": "ghcr.io/containerpak/sdk-zig@sha256:d0be2c64093cfde846a27e4a7229524e8e3c98d9cbea041aa221b4b90669060f",
   "binaries": [
     "/usr/local/bin/zig"
   ],
